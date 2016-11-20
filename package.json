@@ -1,0 +1,21 @@
+{
+  "name": "curso",
+  "version": "1.0.0",
+  "description": "curso angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "narcieliton lopes",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-messages": "^1.5.8",
+    "angular-toastr": "^2.1.1",
+    "angular-ui-grid": "^3.2.9",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1"
+  }
+}
