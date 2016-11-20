@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="node_modules/angular-toastr/dist/angular-toastr.css">
+    <link rel="stylesheet" href="node_modules/angular-ui-grid/ui-grid.css">
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+
+    <!--SCRIPTS-->
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-messages/angular-messages.js"></script>
+    <script src="node_modules/angular-toastr/dist/angular-toastr.tpls.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-ui-grid/ui-grid.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="node_modules/oclazyload/dist/ocLazyLoad.js"></script>
+
+
+    <script src="app/config/pd-app.js"></script>
+    <script src="app/config/pd-rotas.config.js"></script>
+    <script src="app/controller/index-router.controller.js"></script>
+
+
+</head>
+<body ng-app="pdApp" class="container" ng-controller="IndexRouterController">
+
+
+    <md-nav-bar>
+        <md-nav-item md-nav-click="abrirPagina('cadastroCarro')" >Cadastro de carro</md-nav-item>
+        <md-nav-item md-nav-click="abrirPagina('pesquisaCarro')" >Pesquisa de carro</md-nav-item>
+    </md-nav-bar>
+
+    <br>
+
+
+    <ui-view></ui-view>
+
+
+</body>
+</html>

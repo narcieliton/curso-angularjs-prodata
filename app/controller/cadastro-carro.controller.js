@@ -1,8 +1,10 @@
 angular.module('pdApp')
     .controller('CadastroCarroController', CadastroCarroController);
 
+CadastroCarroController.$inject = ['$scope', 'AlertService', '$filter'];
+
 function CadastroCarroController($scope, AlertService, $filter) {
-    $scope.nome = 'Narcieliton Lopes';
+    $scope.nome = 'narcieliton lopes';
     $scope.entidade = {};
     $scope.listaCarros = [];
 
