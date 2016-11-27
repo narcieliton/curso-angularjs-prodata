@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="node_modules/angular-toastr/dist/angular-toastr.css">
+    <link rel="stylesheet" href="node_modules/angular-ui-grid/ui-grid.css">
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+
+
+    <!--SCRIPTS-->
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-messages/angular-messages.js"></script>
+    <script src="node_modules/angular-toastr/dist/angular-toastr.tpls.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-ui-grid/ui-grid.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="node_modules/oclazyload/dist/ocLazyLoad.js"></script>
+
+
+    <script src="app/config/pd-app.js"></script>
+    <script src="arquitetura/directivas/pd-hello-world/pd-hello-word.directive.js"></script>
+    <script src="arquitetura/directivas/pd-input-text/pd-input-text.directive.js"></script>
+    <script src="arquitetura/directivas/pd-crud/pd-crud.directive.js"></script>
+    <script src="app/config/pd-rotas.config.js"></script>
+    <script src="app/controller/index-router.controller.js"></script>
+    <script src="app/controller/index8-directiva-crudo.controller.js"></script>
+    <script src="app/service/alert.service.js"></script>
+
+
+</head>
+<body ng-app="pdApp" class="container" ng-controller="CadastroCarroController as vm">
+
+    <div class="row">
+        <pd-crud titulo="Cadastro de Carro"
+        salvar="vm.salvar()"
+        limpar="vm.limpar()"
+        excluir="vm.excluir()"
+         ng-model="vm.entidade.nome"
+         label="Carro"
+         placeholder="nome do carro">
+
+            jçlkjçlkj
+         </pd-crud>
+
+    </div>
+
+</body>
+</html>

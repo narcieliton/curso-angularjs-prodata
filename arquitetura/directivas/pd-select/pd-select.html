@@ -1,0 +1,19 @@
+<div ng-class="classColspan">
+    <div class="form-group">
+        <label>
+            <label for="{{idInputSelect}}" ng-bind="label"></label>
+               </label>
+             <i class="fa fa-asterix text-danger" ng-if="requerido !== false" ></i>
+
+        <label>
+
+        <select class="form-control"
+                id="{{idInputSelect}}"
+                ng-model="ngModel">
+             <option ng-repeat="item in provider"
+             ng-value="item[propriedadeValor]">{{item[propriedadeDescricao]}}</option>
+
+        </select>
+
+    </div>
+</div>
