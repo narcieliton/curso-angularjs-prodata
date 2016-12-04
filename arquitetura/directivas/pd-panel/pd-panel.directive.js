@@ -4,7 +4,7 @@
     angular.module('pdAppArquitetura')
         .directive('pdPanel', pdPanel);
 
-    function pdPanel(AlertService) {
+    function pdPanel() {
         return {
             restrict: 'E',
             templateUrl:'arquitetura/directivas/pd-panel/pd-panel.html',

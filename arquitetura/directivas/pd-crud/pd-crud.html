@@ -1,5 +1,4 @@
-<div ng-class="crud">
-<div ng-class="crud">
+<div ng-class="pd-crud">
     <form name="{{formName}}" novalidate>
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -15,7 +14,8 @@
                 <i class="fa fa-floppy-o"></i>
                 Salvar
             </button>
-            <button class="btn btn-danger navbar-btn" ng-click="excluir()">
+            <button class="btn btn-danger navbar-btn" ng-click="excluir()"
+                    ng-if="exibirBotaoExcluir !== false">
                 <i class="fa fa-trash"></i>
                 Excluir
             </button>

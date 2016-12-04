@@ -14,7 +14,8 @@
             'ui.router',
             'oc.lazyLoad',
             'pdAppArquitetura',
-            'LocalStorageModule'
+            'LocalStorageModule',
+            'angular-loading-bar'
         ]
     );
 

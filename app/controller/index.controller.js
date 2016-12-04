@@ -1,21 +1,22 @@
+(function () {
+    angular.module('pdApp')
+        .controller('IndexController', IndexController);
+    function IndexController($scope) {
+        $scope.nome = 'Narcieliton';
 
-angular.module('pdApp')
-    .controller('IndexController', IndexController);
+        $scope.ola = ola;
 
-function IndexController($scope) {
-    $scope.nome = 'Narcieliton';
+        function ola() {
+            alert('Olá');
+        }
 
-    $scope.ola = ola;
+        $scope.$on('testeEnvioEvento', onTesteEnvioEvento);
 
-    function ola() {
-        alert('Olá');
+        function onTesteEnvioEvento(event, data) {
+            var teste = data;
+
+            console.log('Nome: ', event.currentScope.nome)
+        }
     }
+})();
 
-    $scope.$on('testeEnvioEvento', onTesteEnvioEvento);
-
-    function onTesteEnvioEvento(event, data) {
-        var teste = data;
-
-        console.log('Nome: ', event.currentScope.nome)
-    }
-}

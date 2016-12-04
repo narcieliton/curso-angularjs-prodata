@@ -3,9 +3,7 @@
         .controller('IndexController', IndexController);
 
     function IndexController(localStorageService) {
-
       var vm = this;
-
       vm.lista = [
           {nome: 'lopes', sexo:'M'}
       ];

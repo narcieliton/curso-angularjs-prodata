@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="node_modules/angular-toastr/dist/angular-toastr.css">
     <link rel="stylesheet" href="node_modules/angular-ui-grid/ui-grid.css">
     <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+    <link rel="stylesheet" href="app/css/style.css">
 
-    <!--SCRIPTS-->
+    <!-- SCRIPTS -->
     <script src="node_modules/angular/angular.js"></script>
     <script src="node_modules/angular-messages/angular-messages.js"></script>
     <script src="node_modules/angular-toastr/dist/angular-toastr.tpls.js"></script>
@@ -22,25 +23,31 @@
     <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="node_modules/oclazyload/dist/ocLazyLoad.js"></script>
 
-
     <script src="app/config/pd-app.js"></script>
-    <script src="arquitetura/directivas/pd-hello-world/pd-hello-word.directive.js"></script>
+    <script src="arquitetura/directivas/pd-hello-world/pd-hello-world.directive.js"></script>
     <script src="arquitetura/directivas/pd-input-text/pd-input-text.directive.js"></script>
     <script src="arquitetura/directivas/pd-crud/pd-crud.directive.js"></script>
     <script src="app/config/pd-rotas.config.js"></script>
-    <script src="app/controller/index-router.controller.js"></script>
-
+    <script src="app/controller/index.router.controller.js"></script>
 
 </head>
-<body ng-app="pdApp" class="container" ng-controller="IndexRouterController as vmIndexController">
+<body ng-app="pdApp" class="container"
+      ng-controller="IndexRouterController as
+      vmIndexController">
 
-    <!--<pd-hello-world></pd-hello-world>-->
+<div class="row">
+    <pd-input-text label="name"
+                   place-holder="Nome do carro"
+                   ng-model="vmIndexController.entidade.nome"
+                   colspan="3">
+    </pd-input-text>
 
-    <!--<div class="row">-->
-        <!--<pd-input-text ng-model="vmIndexController.entidade.nome" label="Carro" placeholder="nome do carro"></pd-input-text>-->
-    <!--</div>-->
+    <pd-input-text label="Marca"
+                   place-holder="Marca do carro"
+                   ng-model="vmIndexController.entidade.marca"
+                   colspan="3">
+    </pd-input-text>
+</div>
 
-
-    {{vmIndexController.entidade.nome}}
 </body>
 </html>
